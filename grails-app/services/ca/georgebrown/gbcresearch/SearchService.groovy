@@ -48,7 +48,7 @@ class SearchService {
         [result: peopleList, count: count]
     }
 
-    // This function is for the public view of the projects (Julie)
+    // This function is for the public view of the projects
     def publishedList(params) {
         def searchText = params.searchInput?"%${params.searchInput}%":null
         def c = Submission.createCriteria()
