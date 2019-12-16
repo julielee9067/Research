@@ -10,6 +10,7 @@ class ProfileService {
     def settingService
     def userMatchService
 
+    // This function creates a new profile for the app user.
     def addProfile(appuser) {
         if (!Profile.findByAppuser(appuser)) {
             Profile newUser = new Profile(appuser: appuser)
@@ -17,6 +18,8 @@ class ProfileService {
         }
     }
 
+    // This function adds a current app user as a following to the profile user.
+    // Or, if the user is already following the profile user, it removes the appuser from the list.
     def addFollowing (appuser, profileUser) {
         UserMatching userMatching = userMatchService.initialize(appuser, profileUser).userMatching
         if (appuser in profileUser.followedBy) {
@@ -39,6 +42,7 @@ class ProfileService {
         }
     }
 
+    // This function updates the current user's profile setting.
     def updateSettings(appuser, params) {
         def showEmail = params?.showEmail ?: false
         def showInterests = params?.showInterests ?: false
@@ -83,6 +87,7 @@ class ProfileService {
         return
     }
 
+    // This function creates and sets the profile setting to the default if it doesn't exist on the database.
     def defaultSettings(appuser) {
         if (!ProfileSetting.findByAppuser(appuser)) {
             ProfileSetting newSettings = new ProfileSetting(appuser:appuser)
@@ -90,6 +95,7 @@ class ProfileService {
         }
     }
 
+    // This function gets all the submissions by the current user.
     def getSubmissions(Appuser owner, def publicProfile) {
         def c = Submission.createCriteria()
         def submissionList = c.list() {
@@ -104,6 +110,7 @@ class ProfileService {
         return newList
     }
 
+    // This function gets the published submissions by the user.
     def getPublicSubmissions(Appuser owner) {
         def c = Submission.createCriteria()
         def submissionList = c.list() {
@@ -114,6 +121,7 @@ class ProfileService {
         return submissionList
     }
 
+    // This function gets the submissions by the Banner User.
     def getBannerUserSubmissions(Appuser owner, Boolean publicProfile) {
         def c = Submission.createCriteria()
         def submissionList = c.list() {
@@ -136,6 +144,7 @@ class ProfileService {
         return submissionList
     }
 
+    // This function gets the list of the recently viewed submissions.
     def getViewedSubmissions(Appuser user) {
         def c = SubmissionViewTracker.createCriteria()
         def viewedList = c.list(max: 10, offset: 0) {
@@ -156,6 +165,7 @@ class ProfileService {
         return finalList
     }
 
+    // This function gets the settings for the pagination.
     def getScrollSettingsList() {
         def defaultSetting = settingService.get(Setting.CODE.SUBMISSION_SCROLL_SETTING)
         def list = ProfileSetting.SCROLL_SETTING_SELECT_LIST
