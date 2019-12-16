@@ -9,3 +9,6 @@ You can log in on the following website: https://dmzmsa02.georgebrown.ca/Researc
 The test account is: ID: fred, Password: fred.
 
 Note that VPN must be connected to access the website.
+
+# Contribution
+My contributions to this project include, but not limited to, ```grails-app/controllers, services, and views.```
