@@ -10,5 +10,8 @@ The test account is: ID: fred, Password: fred.
 
 Note that VPN must be connected to be able to access the website.
 
+# Sample Image
+![Research homepage index](https://github.com/julielee9067/Research/blob/master/web-app/images/ResearchIndex.png)
+
 # Contribution
 My contributions to this project include, but not limited to, ```grails-app/controllers, services, and views.```
