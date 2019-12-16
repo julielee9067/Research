@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: tonym
-  Date: 2019-09-19
-  Time: 9:18 a.m.
---%>
-
 <%@ page contentType="text/html;charset=UTF-8" %>
 
 <html>

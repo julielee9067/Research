@@ -1,11 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: admin
-  Date: 2019-07-08
-  Time: 10:29
---%>
-
-
 <%@ page import="ca.georgebrown.gbcresearch.SubmissionType" contentType="text/html;charset=UTF-8" %>
 <html>
     <head>

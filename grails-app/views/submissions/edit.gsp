@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: gyqem
-  Date: 6/19/2018
-  Time: 9:48 AM
---%>
-
 <%@ page import="ca.georgebrown.gbcresearch.Submission;  ca.georgebrown.gbcresearch.security.Role; ca.georgebrown.gbcresearch.security.AppuserRole" contentType="text/html;charset=UTF-8" %>
 
 <html>
