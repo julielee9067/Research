@@ -1,0 +1,7 @@
+mode:update
+code:DIGEST
+ccList:
+bccList:
+description:Summary of new content in GBCResearch for GBC employees
+subject:Research Portal Digest
+templates:EMAIL_CSS,DIGEST_BODY,STANDARD_FOOTER

@@ -1,0 +1,7 @@
+mode:update
+code:ACTIVATE_ACCOUNT
+ccList:
+bccList:
+description:Activate Account Email
+subject:Activate Your New Account on GBC Research
+templates:EMAIL_CSS,ACTIVATE_ACCOUNT_BODY,STANDARD_FOOTER

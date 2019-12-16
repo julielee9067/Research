@@ -1,0 +1,17 @@
+package ca.georgebrown.gbcresearch.iago
+
+
+import ca.georgebrown.gbcresearch.Submission
+
+class ResearchTheme {
+    String theme
+
+    static constraints = {
+        theme blank: false
+    }
+    static mapping = {
+        version false
+    }
+    static belongsTo = [Submission]
+    static hasMany = [submissions: Submission]
+}

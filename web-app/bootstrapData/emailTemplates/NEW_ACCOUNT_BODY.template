@@ -1,0 +1,11 @@
+mode:update
+code:NEW_ACCOUNT_BODY
+description:Research Portal - New Account Created
+**START**
+ <p>Hi ${appuser.firstName},</p>
+ <p/>
+ <p>A new account has been created for you on the <a href=${url}>Research Portal application</a>.</p>
+ <p/>
+ <p>Click on the link above and use your GBC ID ${appuser.username} and current password to log in.</p>
+ <p/>
+**END**

@@ -1,0 +1,46 @@
+mode:update
+code:DIGEST_BODY
+description:Summary of new content in GBCResearch for GBC Employees
+**START**
+ <p>Hi ${appuser.firstName},</p>
+ <p/>
+ <p>This is your <a style="text-decoration: none; color: black; font-weight: bold;" href=${researchUrl}>Research Portal</a> digest.</p>
+ <p/>
+ <p>Click on the link above and use your GBC ID ${appuser.username} and current password to log in.</p>
+
+<div class="email-box-info">
+<h3 style="color: black; text-align: center;">New content related to your interests</h2>
+    <div class="email-box-content">
+        <g:if test="${interests}">
+              <g:each in="${interests}" var="interest">
+                  <p> [
+                  <g:each in="${interest.tags}" var="tag" status="i">
+                      <g:if test="${i > 0}">
+                      ,
+                      </g:if>
+                      ${tag.name}
+                  </g:each>
+                  ] <a style="text-decoration: none; color: black; font-weight: bold; white-space: wrap;" href=${submissionUrl}${interest.id}${interestSource}${interestTagInput}${tag.name}>${interest.title}</a> </p>
+              </g:each>
+         </g:if>
+         <g:else>
+            <p>No new content related to your interest<p>
+         </g:else>
+    </div>
+</div>
+
+<div class="email-box-info">
+<h3 style="color: black; text-align: center;">Following User's Content</h2>
+    <div class="email-box-content">
+        <g:if test="${following}">
+              <g:each in="${following}" var="followingContent">
+                 <p>[ ${followingContent?.submitter?.firstName} ${followingContent?.submitter?.lastName} ] <a style="text-decoration: none; color: black; font-weight: bold; white-space: wrap;" href=${submissionUrl}${followingContent?.id}${interestSource}>${followingContent?.title}</a></p>
+              </g:each>
+         </g:if>
+         <g:else>
+            <p>No new content from anyone you follow<p>
+         </g:else>
+    </div>
+</div>
+ <p/>
+**END**

@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+    background-image: url("../images/research-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+body, html {
+    height: 100%;
+}

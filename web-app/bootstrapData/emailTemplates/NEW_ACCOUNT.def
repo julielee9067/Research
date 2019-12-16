@@ -1,0 +1,7 @@
+mode:update
+code:NEW_ACCOUNT
+ccList:
+bccList:
+description:New Account Email
+subject:New Account on GBC Research
+templates:EMAIL_CSS,NEW_ACCOUNT_BODY,STANDARD_FOOTER

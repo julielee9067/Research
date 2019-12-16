@@ -1,0 +1,7 @@
+mode:update
+code:RETURNED_SUBMISSION
+ccList:
+bccList:
+description:Submission Status Changed to Returned
+subject:Your Submission has been Returned for Revision
+templates:EMAIL_CSS,RETURNED_SUBMISSION_BODY,STANDARD_FOOTER

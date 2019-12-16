@@ -1,0 +1,155 @@
+{
+
+  "viewScoreAToB": {
+    "properties": {
+      "description": "View score when the user viewed another user's submissions. ",
+      "type": "integer",
+      "value": "10",
+      "seq": 1
+    }
+  },
+  "viewScoreBToA": {
+    "properties": {
+      "description": "View score when another user viewed the user's submissions. ",
+      "type": "integer",
+      "value": "10",
+      "seq": 2
+    }
+  },
+  "viewScoreSameContent": {
+    "properties": {
+      "description": "View score when the user and another user viewed the same submissions. ",
+      "type": "integer",
+      "value": "10",
+      "seq": 3
+    }
+  },
+  "viewRecencyFactor": {
+    "properties": {
+      "description": "Recency factor for view score. ",
+      "type": "double",
+      "value": "10",
+      "seq": 4
+    }
+  },
+  "viewScoreGeneral": {
+    "properties": {
+      "description": "General weighting factor for view score. ",
+      "type": "integer",
+      "value": "10",
+      "seq": 5
+    }
+  },
+  "followingScoreBFollowsA": {
+    "properties": {
+      "description": "Following score when another user follows the user. ",
+      "type": "integer",
+      "value": "10",
+      "seq": 6
+    }
+  },
+  "followingScoreMutualFollowers": {
+    "properties": {
+      "description": "Following score when the user and another user have mutual followers. ",
+      "type": "integer",
+      "value": "10",
+      "seq": 7
+    }
+  },
+  "followingScoreMutualFollowings": {
+    "properties": {
+      "description": "Following score when the user and another user have mutual followings. ",
+      "type": "integer",
+      "value": "10",
+      "seq": 8
+    }
+  },
+  "followingRecencyFactor": {
+    "properties": {
+      "description": "Recency factor for following score.",
+      "type": "double",
+      "value": "10",
+      "seq": 9
+    }
+  },
+  "followingScoreGeneral": {
+    "properties": {
+      "description": "General weighting factor for following score. ",
+      "type": "integer",
+      "value": "10",
+      "seq": 10
+    }
+  },
+  "interestScoreSameInterest": {
+    "properties": {
+      "description": "Interest score when the user and another user have same interests on their profile. ",
+      "type": "integer",
+      "value": "10",
+      "seq": 11
+    }
+  },
+  "interestScoreSameTags": {
+    "properties": {
+      "description": "Interest score when the user and another user have same tags on their submissions.",
+      "type": "integer",
+      "value": "10",
+      "seq": 12
+    }
+  },
+  "interestScoreInterestFromAMatchesTagFromB": {
+    "properties": {
+      "description": "Interest score when the user's interest matches the tag from another user's submissions. ",
+      "type": "integer",
+      "value": "10",
+      "seq": 13
+    }
+  },
+  "interestScoreGeneral": {
+    "properties": {
+      "description": "General weighting factor for interest score. ",
+      "type": "integer",
+      "value": "10",
+      "seq": 14
+    }
+  },
+  "profileAccessScoreAClickingB": {
+    "properties": {
+      "description": "Profile access score when the user clicks on another user's profile. ",
+      "type": "integer",
+      "value": "10",
+      "seq": 15
+    }
+  },
+  "profileAccessScoreBClickingA": {
+    "properties": {
+      "description": "Profile access score when another user clicks on the user's profile. ",
+      "type": "integer",
+      "value": "10",
+      "seq": 16
+    }
+  },
+  "profileAccessRecencyFactor": {
+    "properties": {
+      "description": "Recency factor for profile access score. ",
+      "type": "double",
+      "value": "10",
+      "seq": 17
+    }
+  },
+  "profileAccessScoreGeneral": {
+    "properties": {
+      "description": "General weighting factor for profile access score. ",
+      "type": "integer",
+      "value": "10",
+      "seq": 18
+    }
+  },
+  "endUserId": {
+    "properties": {
+      "description": "Ending user ID when updating the scores. ",
+      "type": "integer",
+      "value": "0",
+      "seq": 0
+    }
+  }
+}

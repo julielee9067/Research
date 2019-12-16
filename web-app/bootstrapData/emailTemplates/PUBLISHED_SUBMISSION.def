@@ -1,0 +1,7 @@
+mode:update
+code:PUBLISHED_SUBMISSION
+ccList:
+bccList:
+description:Submission Status Changed to Published
+subject:Your Submission has been Published.
+templates:EMAIL_CSS,PUBLISHED_SUBMISSION_BODY,STANDARD_FOOTER

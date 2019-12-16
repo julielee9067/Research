@@ -1,0 +1,15 @@
+mode:update
+code:RETURNED_SUBMISSION_BODY
+description:notifying the users that their submission has been returned for revision.
+**START**
+ <p>Hi ${appuser.firstName} ${appuser.lastName},</p>
+ <p/>
+ <p>This is a notification that your submission "${submission.title}" has been returned for revision for the following reason:
+ <p/>
+ <p> "${submission.rejectionReason}"
+ <p/>
+ <p>Click on the link <a href="${url}">here</a>, and use your GBC ID ${appuser.username} to log in.</p>
+ <p>
+ </p>
+ **END**
+

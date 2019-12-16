@@ -1,0 +1,11 @@
+mode:update
+code:ACTIVATE_ACCOUNT_BODY
+description:Research Portal - Activate Account
+**START**
+  <p>Hi ${appuser.firstName},</p>
+  <p/>
+  <p>An account on the Research Portal application has been created for you. Your Login Id is your email address ${appuser.username}.</p>
+  <p/>
+  <p>Click <a href=${url}>here</a> to activate your account and set your initial password.</p>
+  <p/>
+**END**

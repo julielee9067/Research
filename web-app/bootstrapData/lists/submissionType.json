@@ -1,0 +1,35 @@
+{
+  "Research paper": {
+    "properties": {
+      "description": "Research paper",
+      "isDefault": true,
+      "status": "Active",
+      "sortOrder": 100
+    }
+  },
+  "Project": {
+  "properties": {
+    "description": "Project",
+    "isDefault": true,
+    "status": "Active",
+    "sortOrder": 100
+  }
+},
+  "Conference": {
+    "properties": {
+      "description": "Conference",
+      "isDefault": true,
+      "status": "Active",
+      "sortOrder": 100
+    }
+  },
+  "Workshop": {
+    "properties": {
+      "description": "Workshop",
+      "isDefault": true,
+      "status": "Active",
+      "sortOrder": 100
+    }
+  }
+}
+

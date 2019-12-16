@@ -1,0 +1,7 @@
+mode:update
+code:HEALTH_CHECK
+ccList:
+bccList:
+description:Health Check Issue Found Email
+subject:GBC Research Action Required: Health Check Issue
+templates:EMAIL_CSS,HEALTH_CHECK,STANDARD_FOOTER
