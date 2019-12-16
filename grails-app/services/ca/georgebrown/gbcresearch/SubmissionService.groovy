@@ -90,12 +90,15 @@ class SubmissionService {
         return rights
     }
 
+    // This function saves the submission with updating the search text.
     def save(Submission submission) {
         updateSearchText(submission)
         submission.save(flush:true, failOnError: true)
         return submission
     }
 
+    // This function updates the 'searchText' column for Submission table.
+    // searchText is used when the user types something in search box. it includes the submitter's name, title, and description.
     def updateSearchText(Submission submission) {
         submission.searchText = submission.title + " " + submission.description
 
@@ -122,6 +125,7 @@ class SubmissionService {
         return submission
     }
 
+    // This function deletes all of the submissions with status 'INITIATED'. It is invoked by the job.
     def deleteInitiated() {
         def initiatedList = Submission.findAllBySubmitStatus(Submission.SUBMIT_STATUS.INITIATED)
         Date now = new Date()
