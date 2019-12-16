@@ -52,24 +52,12 @@ class ProfileService {
         def notifyDailyDigest = params?.notifyDailyDigest ?: false
         def scrollSetting = params?.scrollSetting ?: ProfileSetting.SCROLL_SETTING.SCROLL
 
-        if (showEmail) {
-            showEmail = true
-        }
-        if (showInterests) {
-            showInterests = true
-        }
-        if (showRecentlyViewed) {
-            showRecentlyViewed = true
-        }
-        if (notifyInterestedPost) {
-            notifyInterestedPost = true
-        }
-        if (notifyFollowedUserPost) {
-            notifyFollowedUserPost = true
-        }
-        if (notifyDailyDigest) {
-            notifyDailyDigest = true
-        }
+        if (showEmail) showEmail = true
+        if (showInterests) showInterests = true
+        if (showRecentlyViewed) showRecentlyViewed = true
+        if (notifyInterestedPost) notifyInterestedPost = true
+        if (notifyFollowedUserPost) notifyFollowedUserPost = true
+        if (notifyDailyDigest) notifyDailyDigest = true
 
         def newBiography = params?.newBiography ?: Profile.findByAppuser(appuser).biography ?: ' '
         ProfileSetting profileSetting = ProfileSetting.findByAppuser(appuser)
