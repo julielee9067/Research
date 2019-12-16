@@ -19,6 +19,9 @@ class HelpService {
         }
     }
 
+    // This function uploads the file to research/help
+    // Note that if you make any modification to the help document, you would need to upload it manually on the website.
+    // Changing and commiting to the subversion would not automatically fix it in the website.
     def uploadFile(def params, def request) {
         switch(request.method) {
             case "GET":
